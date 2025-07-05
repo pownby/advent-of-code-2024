@@ -25,3 +25,11 @@ https://adventofcode.com/2024
 - Inline map of a list
 - Discovered get method of a dict, which was nice shorthand to safely get a value in an expression (could have used that on line 9, but I left line 9 as a ternary example)
 - Not used: or/and, None is like null, truthy/falsey, reduce does exist but so does sum (!)
+
+### Day 2
+- Used Claude again. I was using ChatGPT earlier for something unrelated and realized how much slower Claude is. I finally noticed some bugs with code Claude gave me today. I guess it was inevitable, but maybe also more likely as I started asking more complicated questions.
+- I had the dreaded moment in part 2 where my code passed the example input, but not the real input. My first approach was just ignoring the first level that made the report unsafe, but I switched to checking each permutation to account for a corner case I was neglecting. This was still pretty fast.
+- I tried to make a common module for reading file input that I could import from anywhere in the project, and it was surprisingly difficult. I found a few different paths forward, but they seemed quite arcane and, sure enough, I couldn't get any of them working quickly. I'll look more into this later. This is where AI has some rough edges and real expertise would probably solve it quickly.
+- reversed, any
+- getting all permutations of an array with one element removed
+- also something `itertools.combinations` that can do the above, but I didn't use and opted for manual inline notation
