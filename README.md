@@ -39,3 +39,9 @@ py -m day[n].main[1,2]
 - reversed, any
 - getting all permutations of an array with one element removed
 - also something `itertools.combinations` that can do the above, but I didn't use and opted for manual inline notation
+
+### Day 3
+- Used combination of Claude and StackOverflow to finally get common modules working.
+- Good old regular expression problem. Was able to get it working without too much trouble using Claude to teach me regexp in Python. I'm sure I could have inlined it a bit more.
+- Regexp
+- Getting local module path
