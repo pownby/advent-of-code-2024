@@ -4,6 +4,12 @@ I want to try learning Python using an AI agent and thought this would be a good
 
 https://adventofcode.com/2024
 
+## Usage
+
+```
+py -m day[n].main[1,2]
+```
+
 ## Lessons learned
 
 ### Day 1 pt 1

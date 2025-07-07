@@ -1,4 +1,4 @@
-from parse import parse
+from .parse import parse
 
 def report_is_safe(report):
   # will just cover increment case
