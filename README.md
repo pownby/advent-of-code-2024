@@ -45,3 +45,9 @@ py -m day[n].main[1,2]
 - Good old regular expression problem. Was able to get it working without too much trouble using Claude to teach me regexp in Python. I'm sure I could have inlined it a bit more.
 - Regexp
 - Getting local module path
+
+### Day 4
+- Only used Claude to learn a couple things
+- Actually part 1 gave me more trouble than part 2. I misunderstood the problem at first and then had some logic issues. While part 2 I got straightaway on first execution.
+- Convert string to list of chars
+- Learned that closure is a thing, but ended up refactoring it out to simplify logic
