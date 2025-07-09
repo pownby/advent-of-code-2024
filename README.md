@@ -51,3 +51,10 @@ py -m day[n].main[1,2]
 - Actually part 1 gave me more trouble than part 2. I misunderstood the problem at first and then had some logic issues. While part 2 I got straightaway on first execution.
 - Convert string to list of chars
 - Learned that closure is a thing, but ended up refactoring it out to simplify logic
+
+### Day 5
+- More Claude! I'll assume I keep using Claude unless stated otherwise
+- This one seemed a bit trickier than previous days. There's probably an easier way to solve this, but I ended up with a naive solution. Still fast enough though!
+- integer division operator `//` (used to find middle element of a list)
+- sets
+- rearranging elements in a list (pop, insert)
