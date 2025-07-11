@@ -58,3 +58,9 @@ py -m day[n].main[1,2]
 - integer division operator `//` (used to find middle element of a list)
 - sets
 - rearranging elements in a list (pop, insert)
+
+### Day 6
+- My first long-running one. Part 2 took quite awhile to run, maybe 30-60 seconds. I thought one optimization would be to skip any cells that had no # in its row or column, but there were none of those in the input. If it was just a single loop you could probably look for how #s are relatively positioned, but for loops involving more than four #s, I decided to just go for the brute force approach. I did at least try to identify loops quickly and exit, which seemed to work.
+- while
+- grid initialization and hydration
+- enums
