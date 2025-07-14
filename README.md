@@ -64,3 +64,10 @@ py -m day[n].main[1,2]
 - while
 - grid initialization and hydration
 - enums
+- not used: value equality (==) vs reference equality (is)
+- also == will do deep equality check
+
+### Day 7
+- Pretty straight-forward with recursion. My biggest concern was splitting three-ways in part 2, but it wasn't too bad. I rearranged things to have the fastest-growing branch first, since I exit a branch early if we've exceeded the target due to all operations being growing. The idea was I could more quickly cut out branches of the OR tree, but I'm not positive how effective it was since it is OR. Either way, it still only took around a second to execute.
+- Splitting an expression to multiple lines
+- Converting to string
