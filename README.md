@@ -71,3 +71,8 @@ py -m day[n].main[1,2]
 - Pretty straight-forward with recursion. My biggest concern was splitting three-ways in part 2, but it wasn't too bad. I rearranged things to have the fastest-growing branch first, since I exit a branch early if we've exceeded the target due to all operations being growing. The idea was I could more quickly cut out branches of the OR tree, but I'm not positive how effective it was since it is OR. Either way, it still only took around a second to execute.
 - Splitting an expression to multiple lines
 - Converting to string
+
+### Day 8
+- Interesting one! First time I built a visualizer to help debug an issue with part 1. Weirdly again part 2 was pretty straightforward. Perhaps that means I engineered part 1 well? :)
+- Looping through a dict
+- Passing functions as arguments
