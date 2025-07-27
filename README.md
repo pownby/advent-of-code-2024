@@ -91,3 +91,7 @@ py -m day[n].main[1,2]
 - The above doesn't work with empty lists
 - Sort lists of classes by parameter (again, lambda)
 - list.remove (how has this not come up before?)
+
+### Day 10
+- This one seemed much easier than Day 9. Maybe because I'm already familiar with grid traversal and recursion, but not tricks that would have helped yesterday? Either way, this one went pretty fast.
+- Tuples (in Sets!)
