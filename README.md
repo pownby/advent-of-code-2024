@@ -76,3 +76,18 @@ py -m day[n].main[1,2]
 - Interesting one! First time I built a visualizer to help debug an issue with part 1. Weirdly again part 2 was pretty straightforward. Perhaps that means I engineered part 1 well? :)
 - Looping through a dict
 - Passing functions as arguments
+
+### Day 9
+- I started using Co-pilot in the IDE for this one. I used it about 9 months ago and found my feelings haven't changed much in that time. For code suggestions, most of them were completely off or close-but-wrong. The only suggestions I actually took were trivial anyway. Meanwhile, the constant suggestions added quite a bit of extra cognitive load over time. Eventually I disabled them since I found them more costly than beneficial. I remember these suggestions being quite good for unit tests, but still not for code like this. I also like using the prompts to do things like complex refactors. Just not the auto suggestions.
+- There's also an Ask function for Co-pilot. This functions similar to the web interface of Claude that I'm using, except it's in a side panel in the IDE. It's a cool idea, but I actually kind of prefer the web interface of Claude just so I can access my chats organized by Advent of Code day from anywhere. You can name chats in the IDE co-pilot too, but they seem tied to the project somehow rather than just accessible account-wide. I haven't looked too much into it, so some of these assertions might be wrong, but I found I just kept using the Claude web interface for this experiment. One exception is for really simple queries for say how to use an API I just can't remember.
+- I haven't used the Agent versions of Co-pilot or Claude code. Advent of Code doesn't seem like a good test of these, so my plan is try these soon but not as part of this experiment.
+- I had a very different implementation for part 1 and part 2. For part 1 I used a list to represent each block on disk, since that seemed like the simplest way to handle all the fragmenting. I could tell using a similar method for part 2 would cause excessive execution time, but defining blocks could allow for a few key optimizations. My idea seemed to work pretty well, and I think part 2 was actually faster execution than part 1.
+- Iterators
+- Classes
+- Reverse ranges
+- Range steps (e.g. 2)
+- Filtering dicts
+- Filtering lists of classes by parameter (i.e. min with lambda)
+- The above doesn't work with empty lists
+- Sort lists of classes by parameter (again, lambda)
+- list.remove (how has this not come up before?)
