@@ -95,3 +95,13 @@ py -m day[n].main[1,2]
 ### Day 10
 - This one seemed much easier than Day 9. Maybe because I'm already familiar with grid traversal and recursion, but not tricks that would have helped yesterday? Either way, this one went pretty fast.
 - Tuples (in Sets!)
+
+### Day 11
+- These ones are fun! It always makes me smile when part 1 is a bit long-running and then part 2 simply says "now do the same thing but many more times". Of course the naive algorithm isn't difficult, the trick is optimizing the solution enough to compute in a reasonable amount of time. I'll record my attempts:
+  - I determined that I didn't need to manage the list at all (splitting/concating), I just needed a count. This sped things up quite a bit and for 25 iterations was sufficiently fast.
+  - I attempted to only do string conversions after determining if it was necessary, via a check for number of digits that Claude taught me. This was only a marginal increase in speed, hardly noteworthy.
+  - I used dynamic programming to attempt to remember already-computed counts. The sheer scope of possibilities of stone values and iteration numbers means you want to be a bit judicious with what you store. I started off with just storing counts for 0s since they seemed relatively common, but this didn't have much effect.
+  - The evolution of the last point led to pre-computing counts for ALL iterations and storing them. Initially I did this for just 0, and it was still taking forever. I didn't have data, but my logic told me it must have had some effect.
+  - The big insight came when I realized that numbers of lengths of powers of two would reduce to their component single digits in log2(n) iterations. This led me to expanding the pre-computed values to all digits instead of only 0. This was the big key, and the correct solution was computed very fast, maybe just over a second. Nice!
+- writing/reading json
+- didn't use, but Claude taught me a neat trick to determine if an integer is a power of two: `n > 0 and (n & (n - 1)) == 0`. It wasn't immediately clear to me why `n & (n - 1) == 0` would work, but Claude gave a great explanation.
